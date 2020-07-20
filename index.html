@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Current Location</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://www.geoplugin.net/javascript.gp"></script>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        $(document).ready(function() {
+            $('#result').html('Your location is ' + geoplugin_city() + ' ' + geoplugin_countryName() + '(' + geoplugin_countryCode() + '/' + geoplugin_currencyCode() + ')');
+        })
+    </script>
+</body>
+</html>
